@@ -1,0 +1,15 @@
+usbd_internal.h:72:20:USBD_EpAddr2Ref	16	static
+usbd_internal.h:101:20:USBD_EpOpen	16	static
+usbd_internal.h:115:20:USBD_EpClose	16	static
+usbd_internal.h:139:20:USBD_EpSetStall	16	static
+usbd_msc.c:103:17:msc_getDesc	32	static
+usbd_msc.c:138:20:msc_getString	16	static
+usbd_msc.c:148:13:msc_receiveCBW	16	static
+usbd_msc.c:160:13:msc_sendCSW	16	static
+usbd_msc.c:172:13:msc_init	32	static
+usbd_msc.c:210:13:msc_deinit	24	static
+usbd_msc.c:236:24:msc_setupStage	24	static
+usbd_msc.c:274:13:msc_inData	24	static
+usbd_msc.c:316:13:msc_outData	24	static
+usbd_msc.c:417:24:MSC_GetLU	16	static
+usbd_msc.c:436:17:USBD_MSC_MountInterface	24	static

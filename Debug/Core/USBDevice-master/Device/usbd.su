@@ -1,0 +1,15 @@
+usbd.c:37:6:USBD_Init	16	static
+usbd.c:61:6:USBD_Deinit	16	static
+usbd.c:73:6:USBD_UnmountInterfaces	24	static
+usbd.c:94:6:USBD_Connect	16	static
+usbd.c:104:6:USBD_Disconnect	16	static
+usbd.c:118:17:USBD_SetRemoteWakeup	24	static
+usbd.c:139:17:USBD_ClearRemoteWakeup	24	static
+usbd.c:159:6:USBD_ResetCallback	16	static
+usbd.c:213:24:USBD_SetAddress	24	static
+usbd.c:237:24:USBD_SetConfig	24	static
+usbd.c:256:24:USBD_GetConfig	16	static
+usbd.c:267:24:USBD_GetStatus	24	static
+usbd.c:279:24:USBD_SetFeature	24	static
+usbd.c:297:24:USBD_ClearFeature	24	static
+usbd.c:315:17:USBD_DevRequest	24	static

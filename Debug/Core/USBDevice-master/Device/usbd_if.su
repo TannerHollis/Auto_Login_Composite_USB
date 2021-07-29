@@ -1,0 +1,7 @@
+usbd_private.h:98:27:USBD_IfClass_GetString	16	static
+usbd_private.h:112:20:USBD_IfClass_Init	16	static
+usbd_private.h:123:20:USBD_IfClass_Deinit	16	static
+usbd_private.h:135:31:USBD_IfClass_SetupStage	16	static
+usbd_if.c:35:6:USBD_IfConfig	24	static
+usbd_if.c:76:13:USBD_IfString	32	static
+usbd_if.c:101:17:USBD_IfRequest	32	static

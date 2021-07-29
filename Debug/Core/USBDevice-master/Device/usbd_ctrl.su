@@ -1,0 +1,9 @@
+usbd_private.h:149:20:USBD_IfClass_DataStage	16	static
+usbd_ctrl.c:34:13:USBD_CtrlSendError	16	static
+usbd_ctrl.c:46:13:USBD_CtrlSendStatus	16	static
+usbd_ctrl.c:56:13:USBD_CtrlReceiveStatus	16	static
+usbd_ctrl.c:69:6:USBD_CtrlInCallback	16	static
+usbd_ctrl.c:112:6:USBD_CtrlOutCallback	16	static
+usbd_ctrl.c:142:17:USBD_CtrlSendData	32	static
+usbd_ctrl.c:171:17:USBD_CtrlReceiveData	32	static
+usbd_ctrl.c:204:6:USBD_SetupCallback	24	static

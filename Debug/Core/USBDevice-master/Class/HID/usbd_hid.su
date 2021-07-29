@@ -1,0 +1,12 @@
+usbd_internal.h:72:20:USBD_EpAddr2Ref	16	static
+usbd_internal.h:101:20:USBD_EpOpen	16	static
+usbd_internal.h:115:20:USBD_EpClose	16	static
+usbd_hid.c:167:17:hid_getDesc	48	static
+usbd_hid.c:226:20:hid_getString	16	static
+usbd_hid.c:270:13:hid_init	32	static
+usbd_hid.c:317:13:hid_deinit	24	static
+usbd_hid.c:339:24:hid_setupStage	40	static
+usbd_hid.c:473:13:hid_dataStage	32	static
+usbd_hid.c:491:13:hid_inData	16	static
+usbd_hid.c:524:17:USBD_HID_MountInterface	24	static
+usbd_hid.c:581:17:USBD_HID_ReportIn	40	static

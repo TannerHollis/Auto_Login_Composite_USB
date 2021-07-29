@@ -1,0 +1,8 @@
+usbd_internal.h:72:20:USBD_EpAddr2Ref	16	static
+usbd_private.h:82:24:USBD_IfClass_GetDesc	24	static
+usbd_desc.c:136:17:USBD_DeviceDesc	32	static
+usbd_desc.c:157:17:USBD_ConfigDesc	32	static
+usbd_desc.c:193:17:USBD_GetStringDesc	32	static
+usbd_desc.c:226:17:USBD_GetDescriptor	32	static
+usbd_desc.c:386:10:USBD_EpDesc	32	static
+usbd_desc.c:406:9:USBD_EpHsInterval	24	static

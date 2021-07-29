@@ -1,0 +1,4 @@
+hal_usb.c:28:6:HAL_USB_OTG_FS_MspInit	40	static
+hal_usb.c:43:6:HAL_USB_OTG_FS_MspDeInit	16	static
+hal_usb.c:50:6:HAL_USBD_Setup	4	static
+hal_usb.c:59:6:OTG_FS_IRQHandler	8	static
