@@ -1307,10 +1307,10 @@ void UsbDevice_Init(void)
  800094e:	74da      	strb	r2, [r3, #19]
 
     /* All fields of hid_if have to be properly set up */
-    keyboard_if->Config.InEpNum = 0x84;
+    keyboard_if->Config.InEpNum = 0x83;
  8000950:	4b0f      	ldr	r3, [pc, #60]	; (8000990 <UsbDevice_Init+0x5c>)
  8000952:	681b      	ldr	r3, [r3, #0]
- 8000954:	2284      	movs	r2, #132	; 0x84
+ 8000954:	2283      	movs	r2, #131	; 0x83
  8000956:	741a      	strb	r2, [r3, #16]
 
     /* Mount the interfaces to the device */

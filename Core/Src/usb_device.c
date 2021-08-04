@@ -57,7 +57,7 @@ void UsbDevice_Init(void)
     console_if->Config.NotEpNum = 0x82;
 
     /* All fields of hid_if have to be properly set up */
-    keyboard_if->Config.InEpNum = 0x84;
+    keyboard_if->Config.InEpNum = 0x83;
 
     /* Mount the interfaces to the device */
     USBD_CDC_MountInterface(console_if, UsbDevice);
