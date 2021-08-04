@@ -104,7 +104,7 @@ int main(void)
   UsbDevice_Init();
 
   /* USER CODE END 2 */
-
+  //USBD_HID_ReportIn(&keyboard_if, &kbHID, sizeof(kbHID));
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)

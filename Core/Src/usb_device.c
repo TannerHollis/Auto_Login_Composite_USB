@@ -49,8 +49,6 @@ extern USBD_CDC_IfHandleType *const console_if;
 
 extern USBD_HID_IfHandleType *const keyboard_if;
 
-extern void hid_init(USBD_HID_IfHandleType *itf);
-
 void UsbDevice_Init(void)
 {
     /* All fields of Config have to be properly set up */
@@ -59,13 +57,11 @@ void UsbDevice_Init(void)
     console_if->Config.NotEpNum = 0x82;
 
     /* All fields of hid_if have to be properly set up */
-    keyboard_if->Config.InEpNum = 0x83;
+    keyboard_if->Config.InEpNum = 0x84;
 
     /* Mount the interfaces to the device */
     USBD_CDC_MountInterface(console_if, UsbDevice);
     USBD_HID_MountInterface(keyboard_if, UsbDevice);
-
-    //hid_init(keyboard_if);
 
     /* Initialize the device */
     USBD_Init(UsbDevice, dev_cfg);

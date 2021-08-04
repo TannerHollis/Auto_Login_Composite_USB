@@ -60,9 +60,9 @@ static const USBD_HID_ReportConfigType keyboard_report =
 		},
 		.Feature =
 		{
-				.MaxSize = 8,
+			.MaxSize = 8,
 		},
-		.Input =
+		.Output =
 		{
 			.Interval_ms = 100,
 			.MaxSize = 8,
@@ -77,7 +77,6 @@ static const USBD_HID_AppType keyboard_app =
 
 USBD_HID_IfHandleType _keyboard_if = {
 		.App = &keyboard_app,
-		.Base.AltCount = 1,
 }, *const keyboard_if = &_keyboard_if;
 
 keyboardHID kbHID = {

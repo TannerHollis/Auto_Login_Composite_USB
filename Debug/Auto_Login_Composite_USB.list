@@ -675,7 +675,7 @@ int main(void)
  8000670:	f000 f960 	bl	8000934 <UsbDevice_Init>
 
   /* USER CODE END 2 */
-
+  //USBD_HID_ReportIn(&keyboard_if, &kbHID, sizeof(kbHID));
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -1281,9 +1281,9 @@ void SystemInit(void)
  8000930:	e000ed00 	.word	0xe000ed00
 
 08000934 <UsbDevice_Init>:
-extern USBD_HID_IfHandleType *const keyboard_if;
+extern USBD_CDC_IfHandleType *const console_if;
 
-extern void hid_init(USBD_HID_IfHandleType *itf);
+extern USBD_HID_IfHandleType *const keyboard_if;
 
 void UsbDevice_Init(void)
 {
@@ -1307,10 +1307,10 @@ void UsbDevice_Init(void)
  800094e:	74da      	strb	r2, [r3, #19]
 
     /* All fields of hid_if have to be properly set up */
-    keyboard_if->Config.InEpNum = 0x83;
+    keyboard_if->Config.InEpNum = 0x84;
  8000950:	4b0f      	ldr	r3, [pc, #60]	; (8000990 <UsbDevice_Init+0x5c>)
  8000952:	681b      	ldr	r3, [r3, #0]
- 8000954:	2283      	movs	r2, #131	; 0x83
+ 8000954:	2284      	movs	r2, #132	; 0x84
  8000956:	741a      	strb	r2, [r3, #16]
 
     /* Mount the interfaces to the device */
@@ -1328,8 +1328,6 @@ void UsbDevice_Init(void)
  800096c:	4611      	mov	r1, r2
  800096e:	4618      	mov	r0, r3
  8000970:	f000 fcf8 	bl	8001364 <USBD_HID_MountInterface>
-
-    //hid_init(keyboard_if);
 
     /* Initialize the device */
     USBD_Init(UsbDevice, dev_cfg);
