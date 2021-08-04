@@ -60,7 +60,7 @@ void UsbDevice_Init(void)
     keyboard_if->Config.InEpNum = 0x83;
 
     /* Mount the interfaces to the device */
-    USBD_CDC_MountInterface(console_if, UsbDevice);
+    //USBD_CDC_MountInterface(console_if, UsbDevice);
     USBD_HID_MountInterface(keyboard_if, UsbDevice);
 
     /* Initialize the device */
