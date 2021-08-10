@@ -20,7 +20,7 @@
   * See the License for the specific language governing permissions and
   * limitations under the License.
   */
-#include "stm32f4xx_hal.h"
+#include "stm32xxxx.h"
 
 #include <xpd_usb.h>
 #include <usb_device.h>

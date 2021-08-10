@@ -6,7 +6,7 @@
  */
 
 #include <usbd_hid.h>
-#include "stm32f4xx_hal.h"
+#include "stm32xxxx.h"
 
 #include "keyboard_if.h"
 
@@ -55,7 +55,7 @@ static const USBD_HID_ReportConfigType keyboard_report =
 		.MaxId = 0,
 		.Input =
 		{
-			.Interval_ms = 100,
+			.Interval_ms = 1,
 			.MaxSize = 8,
 		},
 		.Feature =
@@ -64,8 +64,8 @@ static const USBD_HID_ReportConfigType keyboard_report =
 		},
 		.Output =
 		{
-			.Interval_ms = 100,
-			.MaxSize = 8,
+			.Interval_ms = 500,
+			.MaxSize = 1,
 		},
 };
 
@@ -78,14 +78,3 @@ static const USBD_HID_AppType keyboard_app =
 USBD_HID_IfHandleType _keyboard_if = {
 		.App = &keyboard_app,
 }, *const keyboard_if = &_keyboard_if;
-
-keyboardHID kbHID = {
-		.MODIFIER = 0,
-		.RESERVED = 0,
-		.KEYCODE1 = 0,
-		.KEYCODE2 = 0,
-		.KEYCODE3 = 0,
-		.KEYCODE4 = 0,
-		.KEYCODE5 = 0,
-		.KEYCODE6 = 0,
-};

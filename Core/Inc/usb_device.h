@@ -29,11 +29,12 @@ extern "C"
 #endif
 
 #include <usbd.h>
+#include "main.h"
 
 extern USBD_HandleType *const UsbDevice;
 
 extern void HAL_USBD_Setup(void);
-void UsbDevice_Init(void);
+void UsbDevice_Init(DeviceStateTypeDef device_state);
 
 #ifdef __cplusplus
 }

@@ -1,1 +1,1 @@
-usb_device.c:52:6:UsbDevice_Init	8	static
+usb_device.c:60:6:UsbDevice_Init	16	static

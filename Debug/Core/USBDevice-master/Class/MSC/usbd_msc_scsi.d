@@ -35,6 +35,8 @@ Core/USBDevice-master/Class/MSC/usbd_msc_scsi.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/PDs/STM32_XPD/usbd_pd_if.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/XPD_USB/xpd_usb_otg.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/PDs/STM32_XPD/xpd_usb_wrapper.h \
@@ -112,6 +114,10 @@ C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 
 C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/PDs/STM32_XPD/usbd_pd_if.h:
 

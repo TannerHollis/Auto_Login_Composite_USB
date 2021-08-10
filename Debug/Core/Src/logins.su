@@ -1,0 +1,5 @@
+logins.c:15:6:Logins_Init	16	static
+logins.c:25:6:Set_Login	24	static
+logins.c:35:6:Get_Logins	32	dynamic
+logins.c:49:6:Set_Logins	32	dynamic
+logins.c:63:6:Set_Output_Buffer	24	static

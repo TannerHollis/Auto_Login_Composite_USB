@@ -1,4 +1,8 @@
-console_if.c:102:13:console_if_open	16	static
-console_if.c:114:13:console_if_in_cmplt	24	static
-console_if.c:123:13:console_if_send	16	static
-console_if.c:149:5:_write	40	static
+console_if.c:93:13:console_if_open	16	static
+console_if.c:105:13:console_if_in_cmplt	24	static
+console_if.c:114:13:console_if_send	16	static
+console_if.c:140:5:_write	40	static
+console_if.c:198:13:console_if_out_cmplt	24	static
+console_if.c:207:13:console_if_recv	16	static
+console_if.c:233:5:_read	40	static
+console_if.c:286:9:read_ready	16	static

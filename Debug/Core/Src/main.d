@@ -24,6 +24,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Inc/usb_device.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd_types.h \
@@ -33,8 +35,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/PDs/STM32_XPD/usbd_pd_def.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/XPD_USB/xpd_common.h \
  C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/XPD_USB/xpd_config.h \
- ../Core/Inc/stm32xxxx.h ../Core/Inc/keyboard_if.h \
- C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd_hid.h
+ ../Core/Inc/stm32xxxx.h ../Core/Inc/main.h \
+ C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd_cdc.h \
+ ../Core/Inc/keyboard_if.h ../Core/Inc/logins.h ../Core/Inc/keypress.h \
+ ../Core/Inc/stm32xxxx.h
 
 ../Core/Inc/main.h:
 
@@ -88,6 +92,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
+
 ../Core/Inc/usb_device.h:
 
 C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd.h:
@@ -108,6 +116,14 @@ C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/
 
 ../Core/Inc/stm32xxxx.h:
 
+../Core/Inc/main.h:
+
+C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd_cdc.h:
+
 ../Core/Inc/keyboard_if.h:
 
-C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd_hid.h:
+../Core/Inc/logins.h:
+
+../Core/Inc/keypress.h:
+
+../Core/Inc/stm32xxxx.h:

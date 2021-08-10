@@ -79,7 +79,7 @@
 #define USBD_HID_OUT_SUPPORT        0
 
 /** @brief Set to 1 if a HID interface defines strings in its report descriptor. */
-#define USBD_HID_REPORT_STRINGS     0
+#define USBD_HID_REPORT_STRINGS     1
 
 /** @} */
 

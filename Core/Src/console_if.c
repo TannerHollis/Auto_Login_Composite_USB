@@ -40,8 +40,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
-
-#define STDOUT_BUFFER_SIZE 512
+#include "console_if.h"
 
 #undef errno
 extern int32_t errno;
@@ -56,13 +55,9 @@ static void console_if_open         (void* itf, USBD_CDC_LineCodingType * lc);
 
 #if (STDOUT_BUFFER_SIZE > 0)
 
-static const uint16_t console_in_size = STDOUT_BUFFER_SIZE;
+_console_if_IN console_if_IN;
 
-static struct {
-    uint16_t head;
-    uint16_t tail;
-    uint8_t buffer[STDOUT_BUFFER_SIZE + 1];
-}console_if_IN;
+static const uint16_t console_in_size = STDOUT_BUFFER_SIZE;
 
 static void console_if_in_cmplt     (void* itf, uint8_t * pbuf, uint16_t length);
 static void console_if_send         (void);
@@ -70,13 +65,9 @@ static void console_if_send         (void);
 
 #if (STDIN_BUFFER_SIZE > 0)
 
-static const uint16_t console_out_size = STDIN_BUFFER_SIZE;
+_console_if_OUT console_if_OUT;
 
-static struct {
-    uint16_t head;
-    uint16_t tail;
-    uint8_t buffer[STDIN_BUFFER_SIZE + 1];
-}console_if_OUT;
+static const uint16_t console_out_size = STDIN_BUFFER_SIZE;
 
 static void console_if_out_cmplt    (void* itf, uint8_t * pbuf, uint16_t length);
 static void console_if_recv         (void);
@@ -291,5 +282,15 @@ int _read(int32_t file, uint8_t *ptr, int32_t len)
     return retval;
 }
 #endif
+
+uint8_t read_ready(){
+	uint16_t tail = console_if_OUT.tail, head = console_if_OUT.head;
+	if(tail > head){
+		return (console_out_size - tail) + head == RX_BYTE_LEN;
+	}
+	else{
+		return head - tail == RX_BYTE_LEN;
+	}
+}
 
 /** @} */

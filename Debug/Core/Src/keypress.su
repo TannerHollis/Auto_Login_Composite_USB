@@ -1,0 +1,2 @@
+keypress.c:22:6:type_login	24	static
+keypress.c:47:6:send_key	16	static

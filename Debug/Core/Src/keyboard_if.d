@@ -33,6 +33,8 @@ Core/Src/keyboard_if.o: ../Core/Src/keyboard_if.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Core/Inc/keyboard_if.h
 
 C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/USBDevice-master/Include/usbd_hid.h:
@@ -102,5 +104,9 @@ C:/Users/thollis/OneDrive\ -\ TRC/Documents/STM32/Auto_Login_Composite_USB/Core/
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 
 ../Core/Inc/keyboard_if.h:

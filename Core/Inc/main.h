@@ -38,6 +38,23 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
+typedef enum {
+	OUTPUT,
+	PROGRAM
+} DeviceStateTypeDef;
+
+typedef enum{
+	PROGRAM_WAIT,
+	READ,
+	WRITE,
+	WRITE_TO_MEM
+}ProgramStateTypeDef;
+
+typedef enum{
+	TYPE_WAIT,
+	SEND
+}TypeStateTypeDef;
+
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -64,6 +81,10 @@ void Error_Handler(void);
 #define K0_Pin GPIO_PIN_4
 #define K0_GPIO_Port GPIOE
 #define K0_EXTI_IRQn EXTI4_IRQn
+#define LED0_Pin GPIO_PIN_6
+#define LED0_GPIO_Port GPIOA
+#define LED1_Pin GPIO_PIN_7
+#define LED1_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
